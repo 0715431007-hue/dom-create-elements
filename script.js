@@ -16,16 +16,22 @@ function start() {
 
     // prompting user for name
     let userName = prompt("What is your name?");
+    //new prompt for last name
+    let userLastname = prompt("what is your last name?");
+
     console.log(userName);
 
     // addName function to add name
     addName(userName);
+    addName(userLastname);
 
 }
 
 
 function addName(newName) {
+    
     console.log(newName);
+    
     //creates h2 element
     let h2 = document.createElement("h2");
 
